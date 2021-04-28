@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: github.com/tendermint/tendermint
+    versions:
+    - 0.34.7
+    - 0.34.8
+    - 0.34.9
